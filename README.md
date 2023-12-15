@@ -3,6 +3,7 @@
 ## Adrián Sanz Fernández - alu0101686400@ull.edu.es
 
 # 1 He añadido el apk del primer ejercico
+No lo he podido probar en android, pero funciona en unity
 
 
 # 2 He modificado el codigo de SpeechRecognitionExample para que la araña vaya de izquierda a derecha dependiendo de la voz
