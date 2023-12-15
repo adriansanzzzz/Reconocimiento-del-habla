@@ -7,7 +7,7 @@ using UnityEngine.UI;
 namespace HuggingFace.API.Examples {
      public class SpeechRecognitionExample : MonoBehaviour {
         [SerializeField] private TextMeshProUGUI text;
-        public GameObject spider;  // Asigna el objeto de la araña desde el Inspector
+        public GameObject spider;  // araña desde el Inspector
 
         private AudioClip clip;
         private byte[] bytes;
@@ -68,7 +68,6 @@ namespace HuggingFace.API.Examples {
         private void ProcessSpeechOutput(string output) {
                         text.text = output;
 
-            // Agrega tu lógica para interpretar la salida del reconocimiento de voz aquí
 
             if (output.ToLower().Contains("left")) {
                 text.text = "moviendo izquierda...";
@@ -84,11 +83,11 @@ namespace HuggingFace.API.Examples {
         }
 
         private void MoveSpiderLeft() {
-            // Mueve la araña a la izquierda (ajusta según tu implementación)
+            // Mueve la araña a la izquierda
             spider.transform.Translate(Vector3.left * Time.deltaTime * 10.0f);
         }
         private void MoveSpiderRight() {
-    // Mueve la araña a la derecha (ajusta según tu implementación)
+    // Mueve la araña a la derecha 
         spider.transform.Translate(Vector3.right * Time.deltaTime * 10.0f);
         }
 
